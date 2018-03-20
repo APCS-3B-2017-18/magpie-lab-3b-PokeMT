@@ -42,6 +42,18 @@ public class Magpie2
   {
    response = "Tell me more about your family.";
   }
+  else if (statement.indexOf("hello") >= 0)
+  {
+    response = "Hello.";
+  }
+  else if(statement.indexOf("life") >=0)
+  {
+    response = "Life is a thing.";
+  }
+  else if(statement.indexOf("good bye") >=0)
+  {
+    response = "Bye (type in Bye)";
+  }
   else
   {
    response = getRandomResponse();
