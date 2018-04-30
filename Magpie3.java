@@ -45,6 +45,14 @@ public class Magpie3
   {
    response = "Tell me more about your family.";
   }
+  else if( findKeyword(statement, "pet") >=0)
+  {
+   response = "Tell me more about your pet.";
+  }
+  else if(findKeyword(statement, "teacher") >=0)
+  {
+   response = "Tell me more about your teacher.";
+  }
   else
   {
    response = getRandomResponse();
@@ -164,6 +172,14 @@ public class Magpie3
   else if (whichResponse == 3)
   {
    response = "You don't say.";
+  }
+  else if(whichResponse == 4)
+  {
+   response = "Ok, that is cool.";
+  }
+  else if(whichResponse == 5)
+  {
+   response = "Conversation";
   }
 
   return response;
